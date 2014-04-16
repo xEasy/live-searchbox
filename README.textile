@@ -10,7 +10,7 @@ That's it, really. There are a few configuration options:
 
 * <code>url</code> - a GET request is sent to this url (default: '/search')
 * <code>param</code> - the actually parameter that gets sent to the server (default: 'query')
-* <code>dom_id</code> - the element that gets updated with the results (default: '#results')
+* <code>callback</code> - the element that gets updated with the results (default: '#results')
 * <code>delay</code> - the keystroke delay (default: 100 ms)
 * <code>loading_css</code> - the css for an ajax spinner/loading bar (default: '#loading')
 
@@ -19,7 +19,7 @@ So, customizing each config option might look like this:
 <pre><code>$('input.search').searchbox({
   url: '/your/search/url',
   param: 'q',
-  dom_id: '#thumbnails',
+  callback: function(data) { console.log(data); },
   delay: 250,
   loading_css: '#spinner'
 })</code></pre>
