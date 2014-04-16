@@ -10,7 +10,7 @@ That's it, really. There are a few configuration options:
 
 * <code>url</code> - a GET request is sent to this url (default: '/search')
 * <code>param</code> - the actually parameter that gets sent to the server (default: 'query')
-* <code>callback</code> - the element that gets updated with the results (default: '#results')
+* <code>callback</code> - the func that handle the data reciver form server (default: 'function(data){console.log(data)}')
 * <code>delay</code> - the keystroke delay (default: 100 ms)
 * <code>loading_css</code> - the css for an ajax spinner/loading bar (default: '#loading')
 
